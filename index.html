@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Wolf Hi-tech</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" type="image/png" href="assets/redwolflogo.png">
+
+</head>
+<body>
+
+  <!-- header -->
+<header class="header">
+  <div class="container">
+    <img src="assets/redwolflogo.png" alt="Device Secure Logo" class="logo">
+    <nav class="nav" id="navMenu">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <!-- <li><a href="blog.html">Blog</a></li> -->
+        <li><a href="https://admin.tcopsztpro.in/login">Login</a></li>
+      </ul>
+      <div class="download-buttons">
+        <a href="#" class="btn btn-primary">Download T-COPS ZT PRO</a>
+        <a href="#" class="btn btn-primary">Download T-COPS ZT PRO</a>
+      </div>
+    </nav>
+    <button class="menu-button" id="menuButton" onclick="toggleMenu()">&#9776;</button>
+  </div>
+</header>
+
+<!-- slider -->
+<section class="hero">
+  <div id="slider-wrapper">
+    <div class="inner-wrapper">
+      <input checked type="radio" name="slide" class="control" id="Slide1" />
+      <label for="Slide1" id="s1"></label>
+      <input type="radio" name="slide" class="control" id="Slide2" />
+      <label for="Slide2" id="s2"></label>
+      <input type="radio" name="slide" class="control" id="Slide3" />
+      <label for="Slide3" id="s3"></label>
+      <input type="radio" name="slide" class="control" id="Slide4" />
+      <label for="Slide4" id="s4"></label>
+      <div class="overflow-wrapper">
+        <a class="slide" href="">
+          <picture>
+          <!-- Image for small screens (mobile) -->
+          <source srcset="assets/mobile-banner.png" media="(max-width: 768px)">
+          <!-- Default image (desktop) -->
+          <img src="assets/banner1.png" alt="Banner Image">
+      </picture>
+    </a>
+        <a class="slide" href=""><img src="assets/banner1.png" /></a>
+        <a class="slide" href=""><img src="assets/banner1.png" /></a>
+        <a class="slide" href=""><img src="assets/banner1.png" /></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- //cardsection -->
+<!-- <main class="card-section"> -->
+  <section class="card-section">
+    <div class="card-wrapper">
+        <div class="card-video-card">
+          <video autoplay loop muted>
+            <source src="assets/dumi-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        </div>
+        <div class="card-text">
+            <h1>Empower Your Business with RedWolf Hi-Tech Services:<br> Finance Locker, Electric Vehicle, and Skribbit (stationary) <br>IT Solution's</h1>
+            <p>Meet Red Wolf Hi-tech Pvt Ltd, where innovation meets simplicity. Our
+flagship product,
+the Finance Locker,
+comes in sleek models: T-Cops zt Pro, T-Cops zt Plus, and T-Cops I Mac. With our cutting-edge app, retailers
+can effortlessly manage their financed customers. Delayed EMI payments? No worries. Our system swiftly
+disables phones, ensuring compliance</p>
+        </div>
+    </div>
+</section>
+<!-- </main> -->
+
+<!-- //show product -->
+<section class="image-section">
+  <h1 class="section-title">
+    <span class="red">REDWOLF</span><span class="ev">EV</span>
+  </h1>
+  <div class="image-container">
+      <div class="image-card">
+          <img src="assets/s1update.png" alt="Image 1">
+      </div>
+      <div class="image-card">
+          <img src="assets/s2.png" alt="Image 2">
+      </div>
+      <div class="image-card">
+          <img src="assets/s3.png" alt="Image 3">
+      </div>
+  </div>
+</section>
+
+<section class="team-slider" id="about">
+  <div class="slider-wrapper">
+    <!-- Team Member 1 -->
+    <div class="team-card">
+      <img src="assets/rohit2.jpg" alt="Team Member 1">
+      <div class="card-info">
+        <h3>"Founder & Chairman"</h3>
+        <p>With a profound passion for sales and an acute insight into market dynamics, Rohit Jain pioneered the establishment of RedWolf Hi-Tech.</p>
+        <p>His visionary leadership has been the cornerstone in defining the company's strategic course and propelling its growth trajectory through adept sales and finance management.</p>
+        <div class="card-info red">
+          <p>- Rohit Jain</p>
+        </div>
+      </div>
+    </div>
+    <!-- Team Member 2 -->
+    <div class="team-card">
+      <img src="assets/aniket -removebg-preview.jpg" alt="Team Member 2">
+      <div class="card-info">
+        <h3>"Founder & Managing Director"</h3>
+        <p>As a Founder & Managing Director, Chirag Sachdeva has been integral in shaping the company's product development strategy and nurturing innovation in IT Technology Management.</p>
+        <p>With a steadfast commitment to customer-centric solutions, he has played a pivotal role in solidifying RedWolf Hi-Tech's reputation as a dependable industry leader.</p>
+        <div class="card-info red">
+          <p>- Chirag Sachdeva</p>
+        </div>
+      </div>
+    </div>
+    <!-- Team Member 3 -->
+    <div class="team-card">
+      <img src="assets/pankaj2.jpg" alt="Team Member 3">
+      <div class="card-info">
+        <h3>"Founder & Director"</h3>
+        <p>Armed with extensive expertise in Business Development and Operational management, Pankaj Chaturvedi has served as a catalyst behind the company's expansion and diversification endeavors.</p>
+        <p>His leadership has been instrumental in scaling RedWolf Hi-Tech and driving its vision forward with effective business strategies.</p>
+        <div class="card-info red">
+          <p>- Pankaj Chaturvedi</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  
+
+<!-- hero -->
+ <main class="hero">
+
+  <div class="hero">
+    <img src="assets/img7.jpeg" alt="Forest background" class="hero-image">
+    <div class="title">
+        <h1>ABOUT COMPANY</h1>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="counter-box">
+                <h2 class="counter">65 </h2><span> +</span>
+                <h4>Super Distributor's</h4>
+            </div>
+        </div>
+        <div class="col">
+            <div class="counter-box">
+                
+                <h2 class="counter">278 </h2><span> +</span>
+                <h4>Distributor's</h4>
+            </div>
+        </div>
+        <div class="col">
+            <div class="counter-box">
+                
+                <h2 class="counter">18645</h2><span> +</span>
+                <h4>Retailer's</h4>
+            </div>
+        </div>
+    </div>
+</div>
+ </main>
+
+<!-- Footer -->
+<footer>
+  <div class="content">
+    <div class="top">
+      <img src="assets/redwolflogo.png" alt="Device Secure Logo" class="footer logo">
+    
+      <div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+      
+    </div>
+    <div class="link-boxes">
+      
+      <ul class="box">
+        <li class="link_name">Address</li>
+          <li class="address">Red Wolf Hi-tech Pvt.Ltd. <br> Assotech Business Cresterra,
+            <br>
+            Unit-214,Tower-4
+            <br>
+            Sector 135,Noida-201305.</li>
+      </ul>
+      <ul class="box">
+        <li class="link_name">Email us</li>
+        <li><a href="#">info@redwolfhitech.com</a></li>
+      </ul>
+      <ul class="box">
+        <li class="link_name">Contact us</li>
+        <li><a href="#">+91 9988908111
+          </a></li>
+        <li><a href="#">+91 9888284777</a></li>
+        
+      </ul>
+      <ul class="box">
+        <li class="link_name">Services</li>
+        <li><a href="#">App design</a></li>
+        <li><a href="#">Web design</a></li>
+        <li><a href="#">Logo design</a></li>
+        <li><a href="#">Banner design</a></li>
+      </ul>
+    
+      <ul class="box input-box">
+        <li class="link_name">Subscribe</li>
+        <li><input type="text" placeholder="Enter your email"></li>
+        <li><input type="button" value="Subscribe"></li>
+      </ul>
+    </div>
+  </div>
+  <div class="bottom-details">
+    <div class="bottom_text">
+      <span class="copyright_text">Copyright &#169; 2021 <a href="#">Red Wolf Hi-tech Pvt.Ltd.</a>All rights reserved</span>
+      <span class="policy_terms">
+        <a href="#">Privacy policy</a>
+        <a href="#">Terms & condition</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp icon in the bottom right corner -->
+<a href="https://wa.me/9888284777" target="_blank" class="whatsapp-icon">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="countScript.js"></script>
+<script src="script.js"></script>  
+</body>
+</html>

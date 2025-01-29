@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Wolf Hi-tech</title>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" type="image/png" href="assets/redwolflogo.png">
+
+</head>
+<body>
+
+  <!-- header -->
+<header class="header">
+  <div class="container">
+    <img src="assets/redwolflogo.png" alt="Device Secure Logo" class="logo">
+    <nav class="nav" id="navMenu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <!-- <li><a href="blog.html">Blog</a></li> -->
+        <li><a href="https://admin.tcopsztpro.in/login">Login</a></li>
+      </ul>
+      <div class="download-buttons">
+        <a href="#" class="btn btn-primary">Download T-COPS ZT PRO</a>
+        <a href="#" class="btn btn-primary">Download T-COPS ZT PRO</a>
+      </div>
+    </nav>
+    <button class="menu-button" id="menuButton" onclick="toggleMenu()">&#9776;</button>
+  </div>
+</header>
+
+<!-- slider -->
+<section class="hero">
+ 
+  <div class="contact-form-container">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" 
+                   name="name" 
+                   placeholder="Your Name" required>
+            <span class="error-message" id="nameError"></span>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" 
+                   name="email" 
+                   placeholder="Your Email" required>
+            <span class="error-message" id="emailError"></span>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" 
+                   name="phone" 
+                   placeholder="Your Phone Number" required>
+            <span class="error-message" id="phoneError"></span>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" 
+                      name="message" 
+                      placeholder="Your Message" 
+                      rows="5" required></textarea>
+            <span class="error-message" 
+                  id="messageError"></span>
+        </div>
+        <button type="submit" 
+                class="submit-button">
+          Send Message
+        </button>
+    </form>
+</div>
+
+</section>
+
+<section class="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.456613168829!2d77.40051427561424!3d28.495906790271697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce85dbf2fffff%3A0x1f70e96c5228abe8!2sRed%20Wolf%20Hi-Tech!5e0!3m2!1sen!2sin!4v1713956251692!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+
+<!-- Footer -->
+<footer>
+  <div class="content">
+    <div class="top">
+      <img src="assets/redwolflogo.png" alt="Device Secure Logo" class="footer logo">
+    
+      <div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+      
+    </div>
+    <div class="link-boxes">
+      
+      <ul class="box">
+        <li class="link_name">Address</li>
+          <li class="address">Red Wolf Hi-tech Pvt.Ltd. <br> Assotech Business Cresterra,
+            <br>
+            Unit-214,Tower-4
+            <br>
+            Sector 135,Noida-201305.</li>
+      </ul>
+      <ul class="box">
+        <li class="link_name">Email us</li>
+        <li><a href="#">info@redwolfhitech.com</a></li>
+      </ul>
+      <ul class="box">
+        <li class="link_name">Contact us</li>
+        <li><a href="#">+91 9988908111
+          </a></li>
+        <li><a href="#">+91 9888284777</a></li>
+        
+      </ul>
+      <ul class="box">
+        <li class="link_name">Services</li>
+        <li><a href="#">App design</a></li>
+        <li><a href="#">Web design</a></li>
+        <li><a href="#">Logo design</a></li>
+        <li><a href="#">Banner design</a></li>
+      </ul>
+    
+      <ul class="box input-box">
+        <li class="link_name">Subscribe</li>
+        <li><input type="text" placeholder="Enter your email"></li>
+        <li><input type="button" value="Subscribe"></li>
+      </ul>
+    </div>
+  </div>
+  <div class="bottom-details">
+    <div class="bottom_text">
+      <span class="copyright_text">Copyright &#169; 2021 <a href="#">Red Wolf Hi-tech Pvt.Ltd.</a>All rights reserved</span>
+      <span class="policy_terms">
+        <a href="#">Privacy policy</a>
+        <a href="#">Terms & condition</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp icon in the bottom right corner -->
+<a href="https://wa.me/9888284777" target="_blank" class="whatsapp-icon">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="script.js"></script> 
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function () {
+      emailjs.init("info@redwolfhitech.com");
+  })();
+  
+  function sendEmail() {
+      var fullName = document.querySelector('input[name="full_name"]').value;
+      var email = document.querySelector('input[name="email"]').value;
+      var message = document.querySelector('textarea[name="message"]').value;
+  
+      var templateParams = {
+          from_name: fullName,
+          from_email: email,
+          message_html: message
+      };
+  
+      emailjs.send("info@redwolfhitech.com", "<YOUR_TEMPLATE_ID>", templateParams)
+          .then(function (response) {
+              console.log("Email sent successfully:", response);
+              alert("Your message has been sent successfully!");
+          }, function (error) {
+              console.error("Email sending failed:", error);
+              alert("An error occurred while sending your message. Please try again later.");
+          });
+  
+      return false; // Prevent form submission
+  }
+  
+  document.getElementById('contact-form').addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent default form submission
+      sendEmail(); // Call sendEmail function when the form is submitted
+  });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+</body>
+</html>
