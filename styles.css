@@ -742,6 +742,7 @@ h2,span{
   background-size: cover; /* Make the background cover the entire section */
   background-position: center; /* Center the background image */
   display: flex;
+  margin-top: 150px;
   flex-direction: column; /* Stack title and images vertically */
   align-items: center;
   height: 120vh; /* Ensure the section takes full viewport height */
@@ -882,6 +883,195 @@ h2,span{
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);  /* Increase shadow on hover */
 }
 
+/* journey */
+
+.timeline {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	position: relative;
+  background: linear-gradient(to left, #000000,#d9dfdd, #8a0000);
+}
+
+.timeline__event {
+	margin-bottom: 20px;
+	position: relative;
+	display: flex;
+	margin: 20px 0;
+	border-radius: 6px;
+	align-self: center;
+	width: 50vw;
+}
+
+.timeline__event:nth-child(2n + 1) {
+	flex-direction: row-reverse;
+}
+
+.timeline__event__title {
+	font-size: 1.2rem;
+	line-height: 1.4;
+	text-transform: uppercase;
+	font-weight: 600;
+  font-family: sans-serif;
+	color: #8a0000;
+	
+}
+
+.timeline__event__content {
+	padding: 20px;
+	box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+		0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+	background: #fff;
+	width: calc(40vw - 84px);
+	border-radius: 6px;
+}
+
+.timeline__event__date {
+	color: #FFF;
+	font-size: 1.5rem;
+	font-weight: 600;
+	background: linear-gradient(to right, #000000, #8a0000);
+	display: flex;
+  font-family: sans-serif;
+	align-items: center;
+	justify-content: center;
+	white-space: nowrap;
+	padding: 0 20px;
+	border-radius: 6px 0 0 6px;
+}
+
+.timeline__event__icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: linear-gradient(to right, #000000, #8a0000);
+	padding: 40px;
+	align-self: center;
+	margin: 0 20px;
+	background: linear-gradient(to right, #000000, #8a0000);
+	border-radius: 100%;
+	width: 40px;
+	height: 40px;
+	position: relative;
+}
+
+.timeline__event__description {
+	flex-basis: 100%;
+  font-family: sans-serif;
+}
+
+@keyframes fillLeft {
+	100% {
+		right: 100%;
+	}
+}
+
+@keyframes fillTop {
+	100% {
+		top: 100%;
+	}
+}
+
+@keyframes fillLeftOdd {
+	100% {
+		left: 100%;
+	}
+}
+
+/* testimonials */
+/* Make sure carousel items are in a column layout */
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+}
+
+/* Testimonials Section */
+.testimonials {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(to left, #000000, #8a0000);
+}
+
+.testimonials h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+  font-family: sans-serif;
+}
+
+/* Container for Testimonial Cards */
+.testimonials-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Individual Testimonial Card */
+.testimonial-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+/* Video Styling */
+.testimonial-card video {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+#myVideo {
+  width: 100%;
+  height: auto;
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.play-btn:hover {
+  opacity: 1;
+}
+
+/* Testimonial Content */
+.testimonial-content {
+  padding: 15px;
+}
+
+.testimonial-content h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.testimonial-content p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
 
 /* Animation for auto sliding */
 @keyframes slide {
@@ -1001,7 +1191,7 @@ h2,span{
 }
 
 .card-text h1 {
-    font-size: 1.5rem; /* Larger font for better visibility on small screens */
+    font-size: 20px; /* Larger font for better visibility on small screens */
     color: #cc111a;
     margin-top: 10px; /* Adjusted margin for better spacing */
 }
@@ -1030,6 +1220,7 @@ h2,span{
 /* Adjust section height for smaller screens */
 .image-section {
   height: auto; /* Adjust section height automatically */
+  margin-top: 0px;
 }
 
 #slider-wrapper {
@@ -1040,7 +1231,6 @@ h2,span{
   width: 25%;
   height: 200px;
   float: left;
-  
   object-position: center;
 }
 
@@ -1189,6 +1379,56 @@ h2,span{
 
   .card-info p {
     font-size: 0.9rem; /* Adjust description font size for smaller screens */
+  }
+  .timeline__event {
+		flex-direction: column;
+		align-self: center;
+	}
+
+	.timeline__event__content {
+		width: 100%;
+	}
+
+
+	.timeline__event__icon::before,
+	.timeline__event__icon::after {
+		opacity: 0;
+		visibility: hidden;
+    display: none
+	}
+
+	.timeline__event__date {
+		border-radius: 0;
+		padding: 20px;
+	}
+
+	.timeline__event:nth-child(2n + 1) {
+		flex-direction: column;
+		align-self: center;
+	}
+
+	.timeline__event:nth-child(2n + 1) .timeline__event__date {
+		border-radius: 0;
+		padding: 20px;
+	}
+
+	
+  @keyframes fillLeft {
+    100% {
+      right: 100%;
+    }
+  }
+  
+  @keyframes fillTop {
+    100% {
+      top: 100%;
+    }
+  }
+  
+  @keyframes fillLeftOdd {
+    100% {
+      left: 100%;
+    }
   }
   /* Animation for auto sliding */
 @keyframes slide {
