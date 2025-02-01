@@ -20,7 +20,7 @@
         <li><a href="#hero">Home</a></li>
         <li><a href="#journey">About</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <!-- <li><a href="gallery.html">Events</a></li> -->
+        <li><a href="gallery.html">Events</a></li>
         <li><a href="https://admin.tcopsztpro.in/login">Login</a></li>
       </ul>
       <div class="download-buttons">
@@ -65,24 +65,31 @@
 <!-- Features Section -->
 <section class="features-section">
   <div class="container">
+    <div class="section-heading">
+      <h2 >
+        <span class="red">T-COPS</span> <span class="ev">Features</span>
+      </h2>
+    
+    </div>
+    
     <div class="features-container">
       <div class="feature-card">
-        <img src="assets/feature1.png" alt="Feature 1">
+        <img src="assets/locked.png" alt="Feature 1">
         <h3>Device Lock</h3>
         <p>If the payment is delayed, the retailer may lock the customer's device.</p>
       </div>
       <div class="feature-card">
-        <img src="assets/feature2.png" alt="Feature 2">
+        <img src="assets/insecure-phone.png" alt="Feature 2">
         <h3>Full Authority</h3>
         <p>The retailer would have complete control over the products that were financed.</p>
       </div>
       <div class="feature-card">
-        <img src="assets/feature3.png" alt="Feature 3">
+        <img src="assets/sim-card.png" alt="Feature 3">
         <h3>Sim Unchanged</h3>
         <p>Changing SIM cards will not affect the functionality or performance of the device.</p>
       </div>
       <div class="feature-card">
-        <img src="assets/feature3.png" alt="Feature 4">
+        <img src="assets/protection.png" alt="Feature 4">
         <h3>No Exploitation</h3>
         <p>No one would be able to unfairly exploit the financier or take advantage of their resources.</p>
       </div>
@@ -93,9 +100,9 @@
 
 <!-- //show product -->
 <section class="image-section">
-  <h1 class="section-title">
-    <span class="red">REDWOLF</span><span class="ev">EV</span>
-  </h1>
+  <div class="img">
+    <img src="assets/adXAD.png" alt="RedWolf EV Logo">
+  </div>
   <div class="image-container">
       <div class="image-card">
           <img src="assets/s1update.png" alt="Image 1">
@@ -419,28 +426,28 @@ disables phones, ensuring compliance</p>
  <main class="hero">
 
   <div class="hero">
-    <img src="assets/img7.jpeg" alt="Forest background" class="hero-image">
-    <div class="title">
-        <h1>ABOUT COMPANY</h1>
-    </div>
+    <!-- <img src="assets/img7.jpeg" alt="Forest background" class="hero-image"> -->
+    <h1 class="section-title">
+      <span class="ev">About</span> <span class="red">Company</span>
+    </h1>
     <div class="row">
         <div class="col">
-            <div class="counter-box">
-                <h2 class="counter">65 </h2><span> +</span>
-                <h4>Super Distributor's</h4>
-            </div>
-        </div>
+          <div class="counter-box">
+              <h2 class="counter" data-target="65">0</h2><span>+</span>
+              <h4>Super Distributor's</h4>
+          </div>
+      </div>
         <div class="col">
             <div class="counter-box">
                 
-                <h2 class="counter">390 </h2><span> +</span>
+              <h2 class="counter" data-target="390">0</h2><span>+</span>
                 <h4>Distributor's</h4>
             </div>
         </div>
         <div class="col">
             <div class="counter-box">
                 
-                <h2 class="counter">23400</h2><span> +</span>
+              <h2 class="counter" data-target="23400">0</h2><span>+</span>
                 <h4>Retailer's</h4>
             </div>
         </div>
@@ -486,10 +493,11 @@ disables phones, ensuring compliance</p>
       </ul>
       <ul class="box">
         <li class="link_name">Services</li>
-        <li><a href="#">App design</a></li>
-        <li><a href="#">Web design</a></li>
-        <li><a href="#">Logo design</a></li>
-        <li><a href="#">Banner design</a></li>
+        <li><a href="#">Finance Locker</a></li>
+        <li><a href="#">Electric Vehicle</a></li>
+        <li><a href="#">App Development</a></li>
+        <li><a href="#">Web Devlopment</a></li>
+        <li><a href="#">UI/UX Designing</a></li>
       </ul>
     
       <ul class="box input-box">
@@ -539,6 +547,44 @@ playPauseButtons.forEach(button => {
         }
     });
 });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll(".counter");
+
+    const animateCounter = (counter) => {
+        const target = +counter.getAttribute("data-target");
+        let count = 0;
+        const speed = target / 100; // Adjust speed based on the target value
+
+        const updateCount = () => {
+            if (count < target) {
+                count += Math.ceil(speed);
+                counter.innerText = count;
+                setTimeout(updateCount, 20); // Repeat every 20ms
+            } else {
+                counter.innerText = target; // Ensure final exact number
+            }
+        };
+
+        updateCount();
+    };
+
+    // Observer to detect when counters become visible
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCounter(entry.target);
+                observer.unobserve(entry.target); // Stop observing after animation
+            }
+        });
+    }, { threshold: 0.5 });
+
+    counters.forEach(counter => {
+        observer.observe(counter);
+    });
+});
+
 </script>
 </body>
 </html>
