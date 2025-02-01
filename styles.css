@@ -824,7 +824,7 @@ h2,span{
 .slider-wrapper {
   display: flex;
   width: 300vw; /* Make sure it's 300% of the viewport width */
-  animation: slide 9s infinite ease-in-out;
+  animation: slide 15s infinite ease-in-out;
 }
 
 .team-card {
@@ -1500,6 +1500,7 @@ body {
     text-align: center; /* Align text to the left for better readability */
     margin: 15px;
     max-width: 100%;
+    font-family: sans-serif;
   }
 
   .card-info h3 {
@@ -1507,7 +1508,8 @@ body {
   }
 
   .card-info p {
-    font-size: 0.9rem; /* Adjust description font size for smaller screens */
+    font-size: 1rem; /* Adjust description font size for smaller screens */
+    font-weight: bold;
   }
   .timeline__event {
 		flex-direction: column;
